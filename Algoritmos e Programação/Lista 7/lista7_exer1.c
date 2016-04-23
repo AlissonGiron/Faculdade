@@ -4,9 +4,13 @@
 */
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
 
 int main()
 {
+    setlocale(LC_ALL, "Portuguese");
+    
 	// Variável para o for
 	int i;
 	
@@ -106,7 +110,7 @@ int main()
 	
 	for(i = 0; i < 10; i++)
 	{
-		printf("Digite um numero: ");
+		printf("Digite um numero: \n");
 		scanf("%d", &numero[i]);
 	}
 	
@@ -123,9 +127,9 @@ int main()
 	
 	for(i = 0; i < 10; i++)
 	{
-		printf("\nPosição %d: %d", i, numero[i]);
+		printf("Posição %d: %d\n", i, numero[i]);
 	}	
 	
+	system("PAUSE");
 	return 0;
 }
-
