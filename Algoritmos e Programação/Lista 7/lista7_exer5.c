@@ -10,26 +10,25 @@
 int main()
 {
 	setlocale(LC_ALL, "Portuguese");
-    
+
 	// Variáveis
 	int i;
-	
+
 	// Vetor de 12 posições
-	int numero[12];		
-	
-	// Entrada - Recebe os 12 valores 
+	int numero[12];
+
+	// Entrada - Recebe os 12 valores
 	for(i = 0; i < 12; i++)
 	{
 		printf("Digite um numero: \n");
 		scanf("%d", &numero[i]);
 	}
-	
-	
+
 	/* 
 	   Saída - Os números positivos
 	   Pra fazer uma verificação com um vetor é só indicar uma posição nele.
-	   
-	   Ex.: 
+
+	   Ex.:
 			numero[3] = 10;
 			if(numero[3] >= 0)
 			{
@@ -38,7 +37,7 @@ int main()
 			else {
 				//negativo
 			}
-	*/			
+	*/
 	printf("Números positivos: \n");
 	for(i = 0; i < 12; i++)
 	{
@@ -47,7 +46,7 @@ int main()
 			printf("%d\n", numero[i]);
 		}
 	}
-	
+
 	system("PAUSE");
 	return 0;
 }
